@@ -1,0 +1,38 @@
+
+.centerStage {
+    width: 50%;
+    background: #E5F4EC;
+    display: flex;
+    flex-flow: column;
+}
+
+.centerStageHeader {
+    width: 90%;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+.centerStageHeader p {
+    font-size: 36px;
+    margin:0px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.centerStageButton {
+     width: 175px;
+     height: 40px;
+     margin: 0px;
+     margin-top:20px;
+     background:#8AEA92;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 10px;
+
+}
+
+

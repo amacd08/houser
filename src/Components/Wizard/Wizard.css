@@ -1,0 +1,83 @@
+.centerStage {
+    width: 50%;
+    min-width:600px;
+    background: #E5F4EC;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+
+.wizardCenterStageHeader {
+    width: 90%;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wizardCancelButton {
+    width: 70px;
+    height: 25px;
+    background: #FEC2C2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+wizardCancelButton h3 {
+    margin:0px;
+}
+
+.wizardBox {
+    width: 50%;
+    min-width:500px;
+    height: 200px;
+    margin-top:50px;
+}
+
+.wizardBox h3 {
+    margin:0px;
+    margin-top: 20px;
+}
+
+.addressInput {
+    width: 100%
+}
+.cityStateZipBox {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.state {
+    width: 30px;
+}
+.state input {
+    width: 30px;
+}
+
+.zip {
+    width: 5px;
+    margin:0px;
+}
+
+.zip input {
+    width: 60px;
+}
+
+
+.wizardCompleteButton {
+    width: 175px;
+    height: 40px;
+    background:#8AEA92;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-left: 150px;
+}
+

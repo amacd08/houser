@@ -1,0 +1,19 @@
+.houseBox {
+    width: 90%;
+    margin-left: 20px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    background: #dedede
+}
+
+.houseInfoColumn {
+    margin: 0px;
+    margin-left: 10px;
+}
+
+.deleteHouseButton h2 {
+    margin:0px;
+    margin-right: 5px;
+}
+
