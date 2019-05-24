@@ -4,7 +4,10 @@ create table houses (
     address varchar(100),
     city varchar(100),
     state varchar(2),
-    zip integer,
-    img text,
+    zip integer
+)
+
+alter table houses
+    add img text,
     mortgage decimal,
-    rent decimal)
+    rent decimal

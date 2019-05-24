@@ -1,6 +1,7 @@
 
 .centerStage {
     width: 50%;
+    min-width:600px;
     background: #E5F4EC;
     display: flex;
     flex-flow: column;
@@ -33,6 +34,15 @@
      align-items: center;
      margin-bottom: 10px;
 
+}
+
+.houseBox {
+    width: 90%;
+    margin-left: 20px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    background: #dedede
 }
 
 

@@ -3,17 +3,25 @@ import './House.css'
 
 class House extends Component{
 
+    deleteHouse = () => {
+        this.props.deleteHouse(this.props.houseObj.id)
+    }
+
     render(){
+        const {name, address, city, state, zip} = this.props.houseObj
+
         return(
             <div className="houseBox">
                 <div className="houseInfoColumn">
-                    <p>Property Name: xxx</p>
-                    <p>Address: xxxx</p>
-                    <p>City: xxx</p>
-                    <p>State: xx</p>
-                    <p>Zip: xxx </p>
+                    <p>Property Name: {name}</p>
+                    <p>Address: {address}</p>
+                    <p>City: {city}</p>
+                    <p>State: {state}</p>
+                    <p>Zip: {zip} </p>
                 </div>
-                <div className="deleteHouseButton">
+                <div 
+                  className="deleteHouseButton"
+                  onClick={this.deleteHouse}>
                    <h2> X</h2>
                 </div>
 

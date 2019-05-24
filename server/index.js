@@ -13,6 +13,8 @@ massive(CONNECTION_STRING).then(db => {
 })
 
 app.get('/api/houses', controller.getAllHouses)
-
+app.post('/api/houses', controller.addHouse)
+app.delete('/api/houses/:id', controller.deleteHouse)
 
 app.listen(SERVER_PORT,() => console.log(`Listening on ${SERVER_PORT}`))
+

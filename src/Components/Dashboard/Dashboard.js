@@ -8,7 +8,7 @@ class Dashboard extends Component{
     constructor() {
         super()
         this.state={
-            houseList: []
+            houseList: [],
         }
     }
 
@@ -19,9 +19,34 @@ class Dashboard extends Component{
                   houseList: res.data
               })
           })
+          .catch(() => {
+              this.setState({
+                  houseList:[]
+              })
+          })
+    }
+
+     deleteHouse = async (id) => {
+        const result = await axios.delete(`/api/houses/${id}`)
+        this.setState({
+            houseList:result.data,
+        })
+
     }
 
     render(){
+        const house = this.state.houseList.map((house,i) => {
+                let houseObj = this.state.houseList[i]
+                return <div className='houseBox'
+                            key = {i}>
+                            <House 
+                            houseObj={houseObj} 
+                            deleteHouse={this.deleteHouse}/>
+                        </div>
+                })
+            
+                    
+ 
         return(
             <main>
                 <div className="centerStage">
@@ -33,7 +58,7 @@ class Dashboard extends Component{
                     </div>
 
                     <span><h2>Home Listings</h2></span>
-                        <House />
+                        {house}
                 </div>
             </main>
 

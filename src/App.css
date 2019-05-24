@@ -1,8 +1,9 @@
 main {
   width: 100%;
-  height: calc(100vh - 75px);
+  min-height: 100vh;
   background: #AFD4C0;
   display:flex;
   justify-content: center;
+  margin-bottom: 50;
 
 }
